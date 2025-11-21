@@ -1,0 +1,44 @@
+:root {
+    --color-primario: #28a745;
+    --color-secundario: #6c757d;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.section-heading {
+    color: var(--color-primario);
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primario);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+@media (max-width: 991.98px) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .banner-detallado {
+        display: none;
+    }
+}
